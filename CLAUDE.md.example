@@ -2,19 +2,19 @@
 
 ## Geral
 
-- Se minha solicitação não fizer sentido, for confusa ou você não tiver certeza do que fazer, por favor me peça esclarecimento antes de começar. Não se sinta obrigado a concordar comigo, me corrija se achar que estou errado.
+- Se minha solicitação não fizer sentido, for confusa ou você não tiver certeza do que fazer, me peça esclarecimento antes de começar. Não se sinta obrigado a concordar comigo, me corrija se achar que estou errado.
 - Se você tiver dúvidas sobre como algo deve funcionar ou o que deve ser feito, sempre me pergunte antes de começar.
 - Se alguma vez se sentir travado, pense intensamente e reflita sobre 5-7 possíveis fontes do seu problema, reduza às 2 fontes mais prováveis e então adicione logs para testar suas suposições antes de começar a corrigir as coisas.
 - Sempre visamos construir código limpo, manutenível e escalável. Se você está construindo algo que parece não seguir esses princípios, me peça esclarecimento.
-- Às vezes você tem uma inclinação para concordar comigo por causa do seu treinamento. Mas isso pode direcionar nosso trabalho na direção errada. Se eu te dei uma instrução que está errada, por favor me corrija. 
+- Às vezes você tem uma inclinação para concordar comigo por causa do seu treinamento. Mas isso pode direcionar nosso trabalho na direção errada. Se eu te dei uma instrução que está errada, me corrija. 
 
 ## Github
-- Por favor, não mencione Claude code na mensagem de commit ou em qualquer descrição de PR
+- Não mencione Claude code na mensagem de commit ou em qualquer descrição de PR
 - Use `gh cli` ao interagir com github para pull requests, ler comentários, etc
 - Use formatação de commit convencional
 
 ## Orientação para documentação
-- Por favor, use Context7 para encontrar a documentação relevante e atualizada ao trabalhar com bibliotecas de terceiros, se necessário
+- Use Context7 para encontrar a documentação relevante e atualizada ao trabalhar com bibliotecas de terceiros, se necessário
 
 ## Abordagem de Desenvolvimento
 - Pense criticamente antes de implementar - faça perguntas esclarecedoras quando os requisitos não estiverem claros
