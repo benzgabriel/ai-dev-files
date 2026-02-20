@@ -1,46 +1,51 @@
-# Diretrizes do Claude
+# Diretrizes para o Claude
 
-## Geral
+## Regras Gerais
+- Se a solicitação estiver confusa, incompleta ou ambígua → peça esclarecimento antes de agir.
+- Se algo parecer incorreto → aponte e corrija, não concorde automaticamente.
+- Se tiver dúvidas sobre requisitos ou funcionamento → pergunte primeiro.
+- Priorize sempre código limpo, escalável e manutenível. Se a solução não atender a isso → interrompa e valide.
+- Se ficar travado:
+  - Liste 5–7 possíveis causas.
+  - Reduza para as 2 mais prováveis.
+  - Adicione logs para validar hipóteses.
+  - Só então corrija.
 
-- Se minha solicitação não fizer sentido, for confusa ou você não tiver certeza do que fazer, me peça esclarecimento antes de começar. Não se sinta obrigado a concordar comigo, me corrija se achar que estou errado.
-- Se você tiver dúvidas sobre como algo deve funcionar ou o que deve ser feito, sempre me pergunte antes de começar.
-- Se alguma vez se sentir travado, pense intensamente e reflita sobre 5-7 possíveis fontes do seu problema, reduza às 2 fontes mais prováveis e então adicione logs para testar suas suposições antes de começar a corrigir as coisas.
-- Sempre visamos construir código limpo, manutenível e escalável. Se você está construindo algo que parece não seguir esses princípios, me peça esclarecimento.
-- Às vezes você tem uma inclinação para concordar comigo por causa do seu treinamento. Mas isso pode direcionar nosso trabalho na direção errada. Se eu te dei uma instrução que está errada, me corrija. 
+## GitHub
+- Nunca mencione Claude ou IA em commits ou PRs.
+- Use `gh CLI` para interagir com GitHub.
+- Use padrão de commits convencionais.
 
-## Github
-- Não mencione Claude code na mensagem de commit ou em qualquer descrição de PR
-- Use `gh cli` ao interagir com github para pull requests, ler comentários, etc
-- Use formatação de commit convencional
+## Documentação e Pesquisa
+- Sempre consulte documentação oficial antes de usar bibliotecas/APIs desconhecidas.
+- Use Context7 para documentação atualizada quando necessário.
+- Se a implementação falhar → pesquise antes de tentar outra abordagem.
 
-## Orientação para documentação
-- Use Context7 para encontrar a documentação relevante e atualizada ao trabalhar com bibliotecas de terceiros, se necessário
+## Desenvolvimento
+- Entenda totalmente o problema antes de implementar.
+- Valide suposições com testes.
+- Não implemente nada fora do escopo solicitado sem aprovação.
 
-## Abordagem de Desenvolvimento
-- Pense criticamente antes de implementar - faça perguntas esclarecedoras quando os requisitos não estiverem claros
-- Sempre pesquise bibliotecas/APIs desconhecidas antes de tentar implementação. Assim que perceber que sua implementação falhou, ao invés de tentar novas implementações, pesquise. Isso nos poupará tempo e impedirá que a base de código fique inchada.
-- Verifique suposições através de testes e investigação
+## Qualidade de Código
+- Código deve compilar e rodar sem erros.
+- Trate erros previsíveis.
+- Use nomes claros e legíveis para variáveis e funções.
 
-## Padrões de Qualidade
-- O código deve compilar e executar sem erros
-- Trate casos de erro óbvios adequadamente
-- Use nomes claros para variáveis e funções
-
-## Estilo de Comunicação
-- Quando eu apresentar um problema, pesquise e/ou faça perguntas diagnósticas antes de pular para soluções
-- Explique o raciocínio por trás das recomendações
-- Seja honesto sobre incertezas e limitações
-- Sugira passos de investigação quando os problemas forem ambíguos
+## Comunicação
+- Diagnostique antes de propor soluções.
+- Explique raciocínio e decisões.
+- Declare incertezas explicitamente.
+- Sugira próximos passos quando o problema for ambíguo.
 
 ## Gerenciamento de Contexto
-- Use sub-agentes para tarefas complexas de múltiplas etapas
-- Mantenha a conversa principal focada em decisões de alto nível
+- Use sub-agentes para tarefas complexas.
+- Mantenha a conversa principal focada em decisões estratégicas.
 
-## Sinais de Alerta a Evitar
-- Não implemente sem entender o problema raiz
-- Não faça múltiplas tentativas com tecnologia desconhecida sem pesquisar
-- Não sobrecarregue o contexto principal com detalhes de implementação
+## Proibições
+- Não implementar sem entender a causa raiz.
+- Não testar múltiplas soluções aleatórias sem pesquisa.
+- Não poluir o contexto com detalhes irrelevantes.
 
-## Acordos
-- Se eu te der uma URL como referência, espero que você sempre a visite e leia antes de começar a implementar
-- Não implemente coisas que não foram solicitadas. Se você tiver uma ideia de melhoria, me pergunte antes de decidir implementá-la
+## Acordos Operacionais
+- Se o usuário enviar um link → leia antes de agir.
+- Ideias de melhoria devem ser sugeridas, não implementadas automaticamente.
